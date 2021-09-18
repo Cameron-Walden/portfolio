@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "Hello!",
-      "description": "I'm Cameron Walden, a full stack software developer.",
+      "description_header": "Hi I'm Cameron Walden, a full stack software developer.",
+      "description": "I have a background in  audio engineering, customer relations and as a performing artist. This is all to say that I have a wide range of skills and services at my disposal and am able to accomplish anything I set out to do. I have constantly and consistently proven myself to go above and beyond while working on projects either as an individual or as part of a team. I feel extremely confident in taking on leadership roles, but also have no issues with following orders. I love problem solving and thrive in high stakes environments. I'm always searching for the next big challenge and ways to improve myself. I'm looking for opportunities where I can both learn new skills and solidify the ones I already have. I feel the best way to learn is through teaching, so I'm also looking for opportunities to help others reach their full potential, because in turn, they would be helping me reach mine.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,107 +11,161 @@
     },
     "projects": [
       {
-        "title": "Animal Shelter",
+        "title": "Bus Mall",
         "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "description": "Users choose between three images 25 times and their choices are stored in localStorage. Their results are then displayed on a bar chart.",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/busMall/busmall1.png",
+          "images/portfolio/busMall/busmall2.png"
         ],
-        "url": "",
+        "url": "cameron-walden.github.io/bus-mall/",
         "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
           {
             "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "name": "Javascript"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
           }
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "title": "Bargains of the Lost",
+        "startDate": "2020",
+        "description": "Text based, story driven adventure game with multiple paths and endings",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/BOTL/BOTL.png"
         ],
-        "url": "https://github.com",
+        "url": "https://ravencl-w.github.io/ravenclaw/",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-javascript-plain",
+            "name": "Javascript"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          }
+        ]
+      },
+      {
+        "title": "Salmon Cookies",
+        "startDate": "2020",
+        "description": "Users input data to see the average sales their store would make. Their info is then rendered on a form.",
+        "images": [
+          "images/portfolio/salmonCookies/salmonCookies.png"
+        ],
+        "url": "cameron-walden.github.io/cookie-stand/",
+        "technologies": [
+          {
+            "class": "devicon-javascript-plain",
+            "name": "Javascript"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
           }
         ]
       }
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "C&G Wines",
+        "title": "Wine Distributor",
+        "years": "11.2019 - 3.2020",
+        "jobDescription": "",
         "mainTech": [
-          "Angular 8/9/10"
+          
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "Develop and maintain relationships with new and current accounts",
+          "Deliver wine to accounts throughout the greater Seattle area",
+          "Coordinate issues with other departments and sales representatives"
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
+        "company": "Stumptown Coffee Roasters",
+        "title": "Production Technician",
+        "years": "09.2015 - 06.2019",
+        "jobDescription": "",
+
         "mainTech": [
-          "Angular 7/8"
+
         ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "Maintain account relationships",
+          "Deliver coffee to accounts in greater Seattle area and beyond",
+          "Operate forklift daily to receive shipments of coffee and cold brew"
+        ]
+      },
+      {
+        "company": "Masterpiece International",
+        "title": "Shipping Coordinator",
+        "years": "02.2015 - 06.2015",
+        "jobDescription": "",
+        "mainTech": [
+          
+        ],
+        "technologies": [
+          "Work closely with national and international agents for the safe import and export of fine art",
+          "Travel to airport to supervise the build up of freight",
+          "Email correspondence and database maintenance "
+        ]
+      },
+      {
+        "company": "The Vera Project",
+        "title": "Booking Assistant-Internship",
+        "years": "08.2014 - 02.2015",
+        "jobDescription": "",
+        "mainTech": [
+          
+        ],
+        "technologies": [
+          "Assist with the booking and scheduling of local and touring bands",
+          "Respond to inquiries about booking shows at the venue",
+          "Conduct venue tours for prospective acts"
+        ]
+      },
+      {
+        "company": "The Vera Project",
+        "title": "Audio Engineer",
+        "years": "10.2013 - 02.2014",
+        "jobDescription": "",
+        "mainTech": [
+
+          
+        ],
+        "technologies": [
+          "Oversee touring band performances including sound and media logistics",
+          "Troubleshoot problems as they arise in high-stakes environment",
+          "Lead a team of volunteers assisting with set up and implementation of sound equipment"
+        ]
+      },
+      {
+        "company": "The Vera Project",
+        "title": "Audio Technician Intern",
+        "years": "07.2012 - 10.2013",
+        "jobDescription": "",
+        "mainTech": [
+          
+        ],
+        "technologies": [
+          "Execute set up and tear down of live shows",
+          "Assist with maintenance and repair of working recording studio and venue equipment",
+          "Mix previously recorded live shows"
         ]
       }
     ]

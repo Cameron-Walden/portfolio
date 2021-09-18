@@ -13,6 +13,7 @@ class Experience extends Component {
       var work = this.props.resumeExperience.map(function (work, i) {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
+        const jobDescription = work.jobDescription; //putting this here for now
 
         var mainTech = mainTechnologies.map((technology, i) => {
           return (
