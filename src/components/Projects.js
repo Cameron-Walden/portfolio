@@ -1,24 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 import ProjectDetailsModal from "./ProjectDetailsModal";
+import { useState } from 'react';
 
-class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      deps: {},
-      detailsModalShow: false,
-    };
-  }
+export default function Projects(props){
+  const [detailsModalShow, setDetailsModalShow] = useState(false)
+  const deps = useState({})
 
-  render() {
-    let detailsModalShow = (data) => {
-      this.setState({ detailsModalShow: true, deps: data });
+    const showModalDetails = data => {
+      setDetailsModalShow({ detailsModalShow: true, deps: data });
     };
 
-    let detailsModalClose = () => this.setState({ detailsModalShow: false });
-    if (this.props.resumeProjects && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.projects;
-      var projects = this.props.resumeProjects.map(function (projects) {
+    const detailsModalClose = () => setDetailsModalShow(!detailsModalShow);
+    
+    if (props.resumeProjects && props.resumeBasicInfo) {
+      var sectionName = props.resumeBasicInfo.section_name.projects;
+      var projects = props.resumeProjects.map(function (projects) {
         return (
           <div
             className="col-sm-12 col-md-6 col-lg-4"
@@ -26,7 +22,7 @@ class Projects extends Component {
             style={{ cursor: "pointer" }}
           >
             <span className="portfolio-item d-block">
-              <div className="foto" onClick={() => detailsModalShow(projects)}>
+              <div className="foto" onClick={() => showModalDetails(projects)}>
                 <div>
                   <img
                     src={projects.images[0]}
@@ -57,14 +53,11 @@ class Projects extends Component {
             <div className="row mx-auto">{projects}</div>
           </div>
           <ProjectDetailsModal
-            show={this.state.detailsModalShow}
+            show={detailsModalShow}
             onHide={detailsModalClose}
-            data={this.state.deps}
+            data={deps}
           />
         </div>
       </section>
     );
-  }
 }
-
-export default Projects;

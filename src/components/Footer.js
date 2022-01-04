@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+export default function Footer(props){
 
-class Footer extends Component {
-  render() {
-    if (this.props.sharedBasicInfo) {
-      var networks = this.props.sharedBasicInfo.social.map(function (network) {
+    if (props.sharedBasicInfo) {
+      var networks = props.sharedBasicInfo.social.map(function (network) {
         return (
           <span key={network.name} className="m-4">
             <a href={network.url} target="_blank" rel="noopener noreferrer">
@@ -22,7 +20,7 @@ class Footer extends Component {
             <div className="col">
               <div 
                 onClick={() =>
-                  this.props.applyPickedLanguage(
+                  props.applyPickedLanguage(
                     window.$primaryLanguage,
                     window.$secondaryLanguageIconId
                   )
@@ -38,7 +36,7 @@ class Footer extends Component {
               </div>
               <div 
                 onClick={() =>
-                  this.props.applyPickedLanguage(
+                  props.applyPickedLanguage(
                     window.$secondaryLanguage,
                     window.$primaryLanguageIconId
                   )
@@ -58,8 +56,8 @@ class Footer extends Component {
                 <div className="container">
                   <small>
                     Copyright &copy;{" "}
-                    {this.props.sharedBasicInfo
-                      ? this.props.sharedBasicInfo.name
+                    {props.sharedBasicInfo
+                      ? props.sharedBasicInfo.name
                       : "???"}
                   </small>
                 </div>
@@ -69,7 +67,5 @@ class Footer extends Component {
         </div>
       </footer>
     );
-  }
 }
 
-export default Footer;

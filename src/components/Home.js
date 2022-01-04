@@ -1,27 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Experience from "./Experience";
 
-class Home extends Component {
-  render() {
+export default function Home(props) {
     return (
       <div>
         <Projects
-          resumeProjects={this.props.resumeData.projects}
-          resumeBasicInfo={this.props.resumeData.basic_info}
+          resumeProjects={props.resumeData.projects}
+          resumeBasicInfo={props.resumeData.basic_info}
         />
         <Skills
-          sharedSkills={this.props.sharedData.skills}
-          resumeBasicInfo={this.props.resumeData.basic_info}
+          sharedSkills={props.sharedData.skills}
+          resumeBasicInfo={props.resumeData.basic_info}
         />
         <Experience
-          resumeExperience={this.props.resumeData.experience}
-          resumeBasicInfo={this.props.resumeData.basic_info}
+          resumeExperience={props.resumeData.experience}
+          resumeBasicInfo={props.resumeData.basic_info}
         />
       </div>
     );
-  }
 }
-
-export default Home;

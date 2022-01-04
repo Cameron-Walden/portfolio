@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Skills extends Component {
-  render() {
-    if (this.props.sharedSkills && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.skills;
-      var skills = this.props.sharedSkills.icons.map(function (skills, i) {
+export default function Skills(props){
+
+    if (props.sharedSkills && props.resumeBasicInfo) {
+      var sectionName = props.resumeBasicInfo.section_name.skills;
+      var skills = props.sharedSkills.icons.map(function (skills, i) {
         return (
           <li className="list-inline-item mx-3" key={i}>
             <span>
@@ -38,7 +38,4 @@ class Skills extends Component {
         </div>
       </section>
     );
-  }
 }
-
-export default Skills;
