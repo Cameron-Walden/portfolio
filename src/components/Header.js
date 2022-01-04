@@ -8,12 +8,6 @@ export default function Header(props) {
   const titles = [];
   const [checked, setChecked] = useState(false);
 
-  // constructor() {
-  //   super();
-  //   state = { checked: false };
-  //   onThemeSwitchChange = onThemeSwitchChange.bind(this);
-  // }
-
   const onThemeSwitchChange = checked => {
     setChecked(checked);
     setTheme();
@@ -29,7 +23,7 @@ export default function Header(props) {
 
   if (props.sharedData) {
     var name = props.sharedData.name;
-    const titles = props.sharedData.titles;
+    // let titles = props.sharedData.titles;
     //...map(x => [ x.toUpperCase(), 1500 ] ).flat();
   }
 
