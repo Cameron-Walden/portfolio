@@ -1,16 +1,13 @@
-import React, { Component } from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import React from "react";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 
-class Experience extends Component {
-  render() {
-    if (this.props.resumeExperience && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.experience;
-      var work = this.props.resumeExperience.map(function (work, i) {
+export default function Experience(props){
+
+    if (props.resumeExperience && props.resumeBasicInfo) {
+      var sectionName = props.resumeBasicInfo.section_name.experience;
+      var work = props.resumeExperience.map(function (work, i) {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
         // const jobDescription = work.jobDescription; //putting this here for now
@@ -91,7 +88,5 @@ class Experience extends Component {
         </div>
       </section>
     );
-  }
 }
 
-export default Experience;

@@ -6,19 +6,19 @@
         "about": "About me",
         "projects": "Projects",
         "skills": "Skills",
-        "experience": "Education and"
+        "experience": "Education and Experience"
       }
     },
     "projects": [
       {
-        "title": "Bus Mall",
-        "startDate": "2020",
-        "description": "Users choose between three images 25 times and their choices are stored in localStorage. Their results are then displayed on a bar chart.",
+        "title": "SecuriChat",
+        "startDate": "2021",
+        "description": "End to end encrypted chat server",
         "images": [
-          "images/portfolio/busMall/busmall1.png",
-          "images/portfolio/busMall/busmall2.png"
+          "images/portfolio/SecuriChat/sCLogin.png",
+          "images/portfolio/SecuriChat/SCMessage.png"
         ],
-        "url": "cameron-walden.github.io/bus-mall/",
+        "url": "https://github.com/Secure-Chat",
         "technologies": [
           {
             "class": "devicon-javascript-plain",
@@ -35,13 +35,14 @@
         ]
       },
       {
-        "title": "Bargains of the Lost",
-        "startDate": "2020",
-        "description": "Text based, story driven adventure game with multiple paths and endings",
+        "title": "EZ-Chat",
+        "startDate": "2021",
+        "description": "End to end encrypted back-end chat server",
         "images": [
-          "images/portfolio/BOTL/BOTL.png"
+          "images/portfolio/EZ-Chat/ezIndex.png",
+          "images/portfolio/EZ-Chat/ezDataStore.png"
         ],
-        "url": "https://ravencl-w.github.io/ravenclaw/",
+        "url": "https://github.com/EZ-Chat ",
         "technologies": [
           {
             "class": "devicon-javascript-plain",
@@ -58,11 +59,11 @@
         ]
       },
       {
-        "title": "Salmon Cookies",
-        "startDate": "2020",
-        "description": "Users input data to see the average sales their store would make. Their info is then rendered on a form.",
+        "title": "TripPerfect",
+        "startDate": "2021",
+        "description": "Trip planning application that shows local events when a user inputs their city.",
         "images": [
-          "images/portfolio/salmonCookies/salmonCookies.png"
+          "images/portfolio/TripPerfect/tripPerfect.png"
         ],
         "url": "cameron-walden.github.io/cookie-stand/",
         "technologies": [
@@ -91,9 +92,23 @@
           
         ],
         "technologies": [
-          "React",
           "Javascript",
+          "React",
+          "React-Redux",
+          "React-Native",
+          "Socket-io",
+          "Express",
+          "MongoDB",
+          "Mongo Atlas",
+          "Sequelize",
+          "Git",
+          "Github",
+          "VS Code",
+          "Jest",
           "Bootsstrap",
+          "Material-UI",
+          "Netlify",
+          "Heroku",
           "HTML5",
           "CSS3"
         ]
