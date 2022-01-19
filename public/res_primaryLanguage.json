@@ -25,12 +25,24 @@
             "name": "Javascript"
           },
           {
-            "class": "devicon-css3-plain",
-            "name": "CSS3"
+            "class": "devicon-react-original",
+            "name": "React"
           },
           {
-            "class": "devicon-html5-plain",
-            "name": "HTML5"
+            "class": "devicon-mongodb-plain colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-nodejs-plain colored",
+            "name": "Node.js"
+          },
+          {
+            "class": "devicon-socketio-original colored",
+            "name": "SocketIO"
           }
         ]
       },
@@ -49,12 +61,20 @@
             "name": "Javascript"
           },
           {
-            "class": "devicon-css3-plain",
-            "name": "CSS3"
+            "class": "devicon-express-original colored",
+            "name": "Express"
           },
           {
-            "class": "devicon-html5-plain",
-            "name": "HTML5"
+            "class": "devicon-socketio-original colored",
+            "name": "SocketIO"
+          },
+          {
+            "class": "devicon-nodejs-plain colored",
+            "name": "Node.js"
+          },
+          {
+            "class": "devicon-jest-plain colored",
+            "name": "Jest"
           }
         ]
       },
@@ -72,12 +92,20 @@
             "name": "Javascript"
           },
           {
-            "class": "devicon-css3-plain",
-            "name": "CSS3"
+            "class": "devicon-react-original",
+            "name": "React"
           },
           {
-            "class": "devicon-html5-plain",
-            "name": "HTML5"
+            "class": "devicon-mongodb-plain colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-nodejs-plain colored",
+            "name": "Node.js"
           }
         ]
       }

@@ -24,6 +24,37 @@
           "level": "70"
         },
         {
+          "name": "React, React-Reux",
+          "class": "devicon-react-original",
+          "level": "80"
+        },
+    
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "Node.js",
+          "class": "devicon-nodejs-plain",
+          "level": "85"
+        },
+        {
+          "name": "MongoDB",
+          "class": "devicon-mongodb-plain",
+          "level": "85"
+        },
+        {
+          "name": "Sequelize",
+          "class": "devicon-sequelize-plain",
+          "level": "85"
+        },
+        {
+          "name": "Heroku",
+          "class": "devicon-heroku-original",
+          "level": "85"
+        },
+        {
           "name": "CSS 3",
           "class": "devicon-css3-plain",
           "level": "95"
@@ -34,18 +65,18 @@
           "level": "95"
         },
         {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
+          "name": "Jest",
+          "class": "devicon-jest-plain",
+          "level": "85"
         },
         {
-          "name": "React",
-          "class": "devicon-react-original",
-          "level": "80"
+          "name": "Material-UI",
+          "class": "ddevicon-materialui-plain",
+          "level": "85"
         },
         {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
+          "name": "Socket-IO",
+          "class": "devicon-socketio-original",
           "level": "85"
         }
       ]
