@@ -88,5 +88,4 @@ export default function Experience(props){
         </div>
       </section>
     );
-}
-
+  }
