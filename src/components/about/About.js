@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import reactIcon from "@iconify/icons-logos/react";
 import javascriptIcon from "@iconify/icons-logos/javascript"
 import materialUi from '@iconify/icons-logos/material-ui';
+import './About.scss';
 
 export default function About(props){
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import ProjectDetailsModal from "./ProjectDetailsModal";
+import ProjectDetailsModal from "../projectDetailsModal/ProjectDetailsModal";
+import './Projects.scss';
 
 export default function Projects(props) {
   const [projectDescription, setProjectDescription] = useState({});

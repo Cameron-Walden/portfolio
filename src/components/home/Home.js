@@ -1,6 +1,6 @@
-import Projects from "./Projects";
-import Skills from "./Skills";
-import Experience from "./Experience";
+import Projects from "../projects/Projects";
+import Skills from "../skills/Skills";
+import Experience from "../experience/Experience";
 
 export default function Home(props) {
     return (

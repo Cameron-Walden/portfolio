@@ -1,3 +1,5 @@
+import './Skills.scss';
+
 export default function Skills(props){
 
     if (props.sharedSkills && props.resumeBasicInfo) {

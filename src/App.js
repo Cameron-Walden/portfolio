@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import $ from "jquery";
 import "./App.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Home from "./components/Home";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import About from "./components/about/About";
+import Home from "./components/home/Home";
 
 class App extends Component {
 
