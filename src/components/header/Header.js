@@ -3,6 +3,7 @@ import Switch from "react-switch";
 import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";
 import { useState } from "react";
+import "./Header.scss"
 
 export default function Header(props) {
   const titles = [];

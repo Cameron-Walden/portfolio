@@ -1,3 +1,5 @@
+import './Footer.scss'
+
 export default function Footer(props){
 
     if (props.sharedBasicInfo) {
