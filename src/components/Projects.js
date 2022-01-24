@@ -1,12 +1,11 @@
-import React from "react";
-import ProjectDetailsModal from "./ProjectDetailsModal";
 import { useState } from "react";
+import ProjectDetailsModal from "./ProjectDetailsModal";
 
 export default function Projects(props) {
   const [projectDescription, setProjectDescription] = useState({});
   const [detailsModalShow, setDetailsModalShow] = useState(false);
 
-  const showModalDetails = (data) => {
+  const showModalDetails = data => {
     setDetailsModalShow({ detailsModalShow });
     setProjectDescription(data);
   };

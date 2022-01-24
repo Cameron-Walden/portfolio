@@ -123,17 +123,16 @@
           "Javascript",
           "React",
           "React-Redux",
-          "React-Native",
-          "Socket-io",
+          "Socket.IO",
           "Express",
           "MongoDB",
           "Mongo Atlas",
           "Sequelize",
           "Git",
-          "Github",
+          "GitHub",
           "VS Code",
           "Jest",
-          "Bootsstrap",
+          "Bootstrap",
           "Material-UI",
           "Netlify",
           "Heroku",
@@ -147,7 +146,6 @@
         "years": "09.2010 - 12.2012",
         "jobDescription": "",
         "mainTech": [
-          
         ],
         "technologies": [
           

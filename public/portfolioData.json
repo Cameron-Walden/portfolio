@@ -55,6 +55,11 @@
           "level": "85"
         },
         {
+          "name": "Git",
+          "class": "devicon-git-plain",
+          "level": "85"
+        },
+        {
           "name": "CSS 3",
           "class": "devicon-css3-plain",
           "level": "95"
@@ -62,6 +67,11 @@
         {
           "name": "HTML 5",
           "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "Github",
+          "class": "devicon-github-original",
           "level": "95"
         },
         {
