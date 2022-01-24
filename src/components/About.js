@@ -1,10 +1,7 @@
 import { Icon } from "@iconify/react";
-// import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
-// import vueIcon from "@iconify/icons-logos/vue";
 import javascriptIcon from "@iconify/icons-logos/javascript"
 import materialUi from '@iconify/icons-logos/material-ui';
-
 
 export default function About(props){
 
@@ -44,10 +41,6 @@ export default function About(props){
                     icon={materialUi}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
-                  {/* <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  /> */}
                 </span>
               </div>
             </div>
