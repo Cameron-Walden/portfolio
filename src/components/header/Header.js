@@ -3,13 +3,14 @@ import Switch from "react-switch";
 import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";
 import { useState } from "react";
-import "./Header.scss"
+import "./Header.scss";
+
 
 export default function Header(props) {
   const titles = [];
   const [checked, setChecked] = useState(false);
 
-  const onThemeSwitchChange = checked => {
+  const onThemeSwitchChange = (checked) => {
     setChecked(checked);
     setTheme();
   };
@@ -84,12 +85,12 @@ export default function Header(props) {
       >
         <Nav.Item>
           <LinkContainer to="/">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link className="nav-home"href="/">Home</Nav.Link>
           </LinkContainer>
         </Nav.Item>
         <Nav.Item>
           <LinkContainer to="/about">
-            <Nav.Link eventKey="about">About</Nav.Link>
+            <Nav.Link className="nav-about" eventKey="about">About</Nav.Link>
           </LinkContainer>
         </Nav.Item>
         <Nav.Item>

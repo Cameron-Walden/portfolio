@@ -11,7 +11,7 @@ body[data-theme="dark"] {
    }
 
    .header-icon {
-      color: #3C342C;
+      color: white;
       opacity: 0.8;
    }
 
@@ -37,6 +37,14 @@ body[data-theme="dark"] {
       h1 {
          color: white;
       }
+   }
+
+   .nav-home{
+      color:white;
+   }
+   
+   .nav-about{
+      color:white;
    }
 
    #about {
