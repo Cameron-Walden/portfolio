@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import $ from "jquery";
 import "./App.scss";
@@ -40,6 +41,26 @@ class App extends Component {
       },
     });
   }
+ 
+  // loadResumeFromPath = (path) => { 
+  //   fetch('portfolioData.json'
+  //   ,{
+  //     headers : { 
+  //       'Content-Type': 'application/json',
+  //       'Accept': 'application/json'
+  //      }
+  //   }
+  //   )
+  //     .then(function(data){
+  //       console.log(data)
+  //       return data.json();
+  //     })
+  //     .then(function(data) {
+  //       console.log({ resumeData: data }, 'this is resume data');
+  //       this.setState({ resumeData: data });
+  //     });
+  // }
+
 
   loadPortfolioData = () => {
     $.ajax({
@@ -55,6 +76,21 @@ class App extends Component {
       },
     });
   }
+
+  // loadPortfolioData = () => {
+  //   fetch({
+  //     url: `portfolioData.json`,
+  //     dataType: 'json',
+  //     cache: false,
+  //     success: function (data) {
+  //       this.setState({ sharedData: data });
+  //       document.title = `${this.state.sharedData.basic_info.name}`;
+  //     }.bind(this),
+  //     error: function (err) {
+  //       alert(err);
+  //     },
+  //   });
+  // }
 
   render() {
     return (
