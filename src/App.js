@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 // import { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import $ from "jquery";
 import "./App.scss";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
 import Home from "./components/home/Home";
+import axios from "axios";
 
 class App extends Component {
 
@@ -18,79 +18,39 @@ class App extends Component {
     };
   }
 
-  getProjectsAndSkills = () => {
-    const resumePath = `projectsAndSkills.json`;
-    this.loadResumeFromPath(resumePath);
-  }
-
   componentDidMount = () => {
     this.loadPortfolioData();
     this.getProjectsAndSkills();
   }
 
-  loadResumeFromPath = path => {
-    $.ajax({
-      url: path,
-      dataType: 'json',
-      cache: false,
-      success: function (data) {
-        this.setState({ resumeData: data });
-      }.bind(this),
-      error: function (err) {
-        alert(err);
-      },
-    });
+  getProjectsAndSkills = () => {
+    const resumePath = `projectsAndSkills.json`;
+    this.loadResumeFromPath(resumePath);
   }
- 
-  // loadResumeFromPath = (path) => { 
-  //   fetch('portfolioData.json'
-  //   ,{
-  //     headers : { 
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json'
-  //      }
-  //   }
-  //   )
-  //     .then(function(data){
-  //       console.log(data)
-  //       return data.json();
-  //     })
-  //     .then(function(data) {
-  //       console.log({ resumeData: data }, 'this is resume data');
-  //       this.setState({ resumeData: data });
-  //     });
-  // }
 
+
+  loadResumeFromPath = path => {
+    axios(path)
+    .then(response => {
+      this.setState({ resumeData: response.data })
+    })
+    .catch(error => {
+      console.log(error);
+    })
+  }
 
   loadPortfolioData = () => {
-    $.ajax({
-      url: `portfolioData.json`,
-      dataType: 'json',
-      cache: false,
-      success: function (data) {
-        this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
-      }.bind(this),
-      error: function (err) {
-        alert(err);
-      },
-    });
+    const url = `portfolioData.json`
+    
+    axios(url)
+    .then(response => {
+      this.setState({ sharedData: response.data });
+      document.title = `${this.state.sharedData.basic_info.name}`;
+    })
+    .catch(error => {
+      console.log(error)
+    })
   }
-
-  // loadPortfolioData = () => {
-  //   fetch({
-  //     url: `portfolioData.json`,
-  //     dataType: 'json',
-  //     cache: false,
-  //     success: function (data) {
-  //       this.setState({ sharedData: data });
-  //       document.title = `${this.state.sharedData.basic_info.name}`;
-  //     }.bind(this),
-  //     error: function (err) {
-  //       alert(err);
-  //     },
-  //   });
-  // }
 
   render() {
     return (
