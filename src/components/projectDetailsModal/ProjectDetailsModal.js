@@ -6,7 +6,6 @@ import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 import "./ProjectDetailsModal.scss";
 
 export default function ProjectDetailsModal(props) {
-  
   if (props.data) {
     const technologies = props.data.technologies;
     const images = props.data.images;
@@ -16,29 +15,24 @@ export default function ProjectDetailsModal(props) {
 
     if (props.data.technologies) {
       var tech = technologies.map((icons, i) => (
-        <div>
-          <li className="list-inline-item mx-3" key={i}>
-            <span>
-              <div className="text-center">
-                <i className={icons.class} style={{ fontSize: "300%" }}>
-                  <p className="text-center" style={{ fontSize: "30%" }}>
-                    {icons.name}
-                  </p>
-                </i>
-              </div>
-            </span>
-          </li>
-        </div>
+        <li className="list-inline-item mx-3" key={i}>
+          <span>
+            <div className="text-center">
+              <i className={icons.class} style={{ fontSize: "300%" }}>
+                <p className="text-center" style={{ fontSize: "30%" }}>
+                  {icons.name}
+                </p>
+              </i>
+            </div>
+          </span>
+        </li>
       ));
 
       if (props.data.images) {
-        var img = images.map((image, i) => (
-           <div key={i} data-src={image} />
-        ));
+        var img = images.map((image, i) => <div key={i} data-src={image} />);
       }
     }
   }
-
   return (
     <Modal
       {...props}
