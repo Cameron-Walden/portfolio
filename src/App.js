@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { useState } from "react";
+// import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/header/Header";
@@ -27,7 +27,6 @@ class App extends Component {
     const resumePath = `projectsAndSkills.json`;
     this.loadResumeFromPath(resumePath);
   }
-
 
   loadResumeFromPath = path => {
     axios(path)
