@@ -5,7 +5,6 @@ import { LinkContainer } from "react-router-bootstrap";
 import { useState } from "react";
 import "./Header.scss";
 
-
 export default function Header(props) {
   const titles = [];
   const [checked, setChecked] = useState(false);
@@ -85,12 +84,16 @@ export default function Header(props) {
       >
         <Nav.Item>
           <LinkContainer to="/">
-            <Nav.Link className="nav-home"href="/">Home</Nav.Link>
+            <Nav.Link className="nav-home" href="/">
+              Home
+            </Nav.Link>
           </LinkContainer>
         </Nav.Item>
         <Nav.Item>
           <LinkContainer to="/about">
-            <Nav.Link className="nav-about" eventKey="about">About</Nav.Link>
+            <Nav.Link className="nav-about" eventKey="about">
+              About
+            </Nav.Link>
           </LinkContainer>
         </Nav.Item>
         <Nav.Item>
@@ -145,7 +148,12 @@ export default function Header(props) {
               data-inline="false"
             ></span>
             <br />
-            <h1 className="mb-0">{name}</h1>
+            <a
+              className="mb-0"
+              href="https://www.linkedin.com/in/cameronwalden/"
+            >
+              <h1 className="grow">{name}</h1>
+            </a>
             <div className="title-container">
               <HeaderTitleTypeAnimation />
             </div>

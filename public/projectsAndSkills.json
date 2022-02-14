@@ -113,31 +113,33 @@
     "experience": [
       {
         "company": "Code Fellows",
-        "title": "Full Stack Javascript",
+        "title": "Advanced Software Development with Javascript",
         "years": "07.2021 - 12.2021",
         "jobDescription": "",
         "mainTech": [
           
         ],
         "technologies": [
-          "Javascript",
+          "Node.js",
           "React",
+          "React-Native",
           "React-Redux",
-          "Socket.IO",
+          "Socket-IO",
           "Express",
           "MongoDB",
           "Mongo Atlas",
           "Sequelize",
+          "Thunderclient",
           "Git",
           "GitHub",
           "VS Code",
           "Jest",
-          "Bootstrap",
           "Material-UI",
-          "Netlify",
           "Heroku",
-          "HTML5",
-          "CSS3"
+          "Netlify",
+          "Elastic Beanstalk",
+          "AWS Lamnda",
+          "DynamoDB"
         ]
       },
       {
@@ -160,9 +162,9 @@
           
         ],
         "technologies": [
-          "Develop and maintain relationships with new and current accounts",
-          "Deliver wine to accounts throughout the greater Seattle area",
-          "Coordinate issues with other departments and sales representatives"
+          "Developed and cultivated relationships with new and 30 existing accounts through effective communication and exemplary interpersonal skills.",
+          "Partnered with our sales representatives to develop and execute a comprehensive sales plan to increase revenue.",
+          "Coordinated solving issues involving accounts with the HR department and sales representatives."
         ]
       },
       {
@@ -175,7 +177,7 @@
 
         ],
         "technologies": [
-          "Maintain account relationships",
+          "Maintained and strengthened account relationships for no less than 50 accounts by delivering high quality client service and excellent attention to detail.",
           "Deliver coffee to accounts in greater Seattle area and beyond",
           "Operate forklift daily to receive shipments of coffee and cold brew"
         ]
@@ -190,8 +192,8 @@
         ],
         "technologies": [
           "Work closely with national and international agents for the safe import and export of fine art",
-          "Travel to airport to supervise the build up of freight",
-          "Email correspondence and database maintenance "
+          "Traveled to the airport to supervise the shipping and receiving of fine art to and from national and international galleries, museums, and private lenders.",
+          "Performed extensive analytical calculations for clients through email correspondence and database maintenance"
         ]
       },
       {
