@@ -20,6 +20,17 @@
 	margin: 0 !important;
 }
 
+.mb-2{
+	border-radius: 100px;
+	transition: all .2s ease-in-out; 
+	text-align: center;
+}
+
+.mb-2:hover{
+	transform: scale(1.4);
+	text-align: center;
+}
+
 .main-badge {
 	font-size: 13px !important;
 	text-align: left !important;
