@@ -11,7 +11,7 @@ import axios from "axios";
 class App extends Component {
 
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       resumeData: {},
       sharedData: {},
