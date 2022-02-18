@@ -1,5 +1,8 @@
 import { Badge } from "@mui/material";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 import HourglassBottomSharpIcon from "@mui/icons-material/HourglassBottomSharp";
 import "./Experience.scss";
 import "react-vertical-timeline-component/style.min.css";
@@ -33,7 +36,7 @@ export default function Experience(props) {
             color: "#fff",
             textAlign: "center",
           }}
-          icon={<HourglassBottomSharpIcon/>}
+          icon={<HourglassBottomSharpIcon />}
           key={i}
         >
           <div style={{ textAlign: "left", marginBottom: "4px" }}>
