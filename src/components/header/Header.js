@@ -6,7 +6,6 @@ import { useState } from "react";
 import "./Header.scss";
 
 export default function Header(props) {
-  const titles = [];
   const [checked, setChecked] = useState(false);
 
   const onThemeSwitchChange = (checked) => {
@@ -15,25 +14,11 @@ export default function Header(props) {
   };
 
   const setTheme = () => {
-    var dataThemeAttribute = "data-theme";
-    var body = document.body;
-    var newTheme =
-      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
+    const dataThemeAttribute = "data-theme";
+    const body = document.body;
+    const newTheme = body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
     body.setAttribute(dataThemeAttribute, newTheme);
   };
-
-  if (props.sharedData) {
-    var name = props.sharedData.name;
-    // let titles = props.sharedData.titles;
-    //...map(x => [ x.toUpperCase(), 1500 ] ).flat();
-  }
-
-  const HeaderTitleTypeAnimation = React.memo(
-    () => {
-      return titles;
-    },
-    (props, prevProp) => true
-  );
 
   return (
     <header
@@ -152,10 +137,9 @@ export default function Header(props) {
               className="mb-0"
               href="https://www.linkedin.com/in/cameronwalden/"
             >
-              <h1 className="grow">{name}</h1>
+              <h1 className="grow">Cameron Walden</h1>
             </a>
             <div className="title-container">
-              <HeaderTitleTypeAnimation />
             </div>
           </div>
         </div>
