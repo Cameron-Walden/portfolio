@@ -5,7 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { useState } from "react";
 import "./Header.scss";
 
-export default function Header(props) {
+export default function Header() {
   const [checked, setChecked] = useState(false);
 
   const onThemeSwitchChange = (checked) => {
@@ -127,11 +127,11 @@ export default function Header(props) {
       <div className="row aligner" style={{ height: "100%" }}>
         <div className="col-md-12">
           <div>
-            <span
+            {/* <span
               className="iconify header-icon"
               data-icon="la:laptop-code"
               data-inline="false"
-            ></span>
+            ></span> */}
             <br />
             <a
               className="mb-0"
