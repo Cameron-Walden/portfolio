@@ -1,9 +1,9 @@
 import "./Skills.scss";
 
-export default function Skills(props) {
-  if (props.sharedSkills && props.resumeBasicInfo) {
-    var sectionName = props.resumeBasicInfo.section_name.skills;
-    var skills = props.sharedSkills.icons.map((skills, i) => (
+export default function Skills({ sharedSkills, resumeBasicInfo }) {
+  if (sharedSkills && resumeBasicInfo) {
+    var sectionName = resumeBasicInfo.section_name.skills;
+    var skills = sharedSkills.icons.map((skills, i) => (
       <li className="list-inline-item mx-3" key={i}>
         <span>
           <div className="text-center skills-tile">

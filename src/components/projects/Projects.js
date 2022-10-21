@@ -2,7 +2,7 @@ import { useState } from "react";
 import ProjectDetailsModal from "../projectDetailsModal/ProjectDetailsModal";
 import "./Projects.scss";
 
-export default function Projects(props) {
+export default function Projects({ resumeProjects, resumeBasicInfo }) {
   const [projectDescription, setProjectDescription] = useState({});
   const [detailsModalShow, setDetailsModalShow] = useState(false);
 
@@ -15,9 +15,9 @@ export default function Projects(props) {
     setDetailsModalShow(!detailsModalShow);
   };
 
-  if (props.resumeProjects && props.resumeBasicInfo) {
-    var sectionName = props.resumeBasicInfo.section_name.projects;
-    var projects = props.resumeProjects.map((project) => (
+  if (resumeProjects && resumeBasicInfo) {
+    var sectionName = resumeBasicInfo.section_name.projects;
+    var projects = resumeProjects.map((project) => (
       <div
         className="col-sm-12 col-md-6 col-lg-4"
         key={project.title}

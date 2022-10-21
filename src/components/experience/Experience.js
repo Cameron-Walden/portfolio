@@ -1,17 +1,14 @@
 import { Badge } from "@mui/material";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import HourglassBottomSharpIcon from "@mui/icons-material/HourglassBottomSharp";
 import "./Experience.scss";
 import "react-vertical-timeline-component/style.min.css";
 
-export default function Experience(props) {
-  if (props.resumeExperience && props.resumeBasicInfo) {
-    var sectionName = props.resumeBasicInfo.section_name.experience;
+export default function Experience({ resumeExperience, resumeBasicInfo }) {
+  if (resumeExperience && resumeBasicInfo) {
+    var sectionName = resumeBasicInfo.section_name.experience;
 
-    var work = props.resumeExperience.map((work, i) => {
+    var work = resumeExperience.map((work, i) => {
       const technologies = work.technologies;
       const mainTechnologies = work.mainTech;
 

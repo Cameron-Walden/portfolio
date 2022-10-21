@@ -4,14 +4,14 @@ import javascriptIcon from "@iconify/icons-logos/javascript";
 import materialUi from "@iconify/icons-logos/material-ui";
 import "./About.scss";
 
-export default function About(props) {
-  if (props.sharedBasicInfo) {
-    var profilepic = "images/" + props.sharedBasicInfo.image;
+export default function About({ sharedBasicInfo, resumeBasicInfo }) {
+  if (sharedBasicInfo) {
+    var profilepic = "images/" + sharedBasicInfo.image;
   }
-  if (props.resumeBasicInfo) {
-    var sectionName = props.resumeBasicInfo.section_name.about;
-    var hello = props.resumeBasicInfo.description_header;
-    var about = props.resumeBasicInfo.description;
+  if (resumeBasicInfo) {
+    var sectionName = resumeBasicInfo.section_name.about;
+    var hello = resumeBasicInfo.description_header;
+    var about = resumeBasicInfo.description;
   }
 
   return (
