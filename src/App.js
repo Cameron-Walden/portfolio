@@ -5,6 +5,8 @@ import About from "./components/about/About";
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import axios from "axios";
+import Projects from "./components/projects/Projects";
+import Experience from "./components/experience/Experience";
 import "./App.scss";
 
 export default function App() {
@@ -32,7 +34,6 @@ export default function App() {
     axios(url)
       .then((response) => {
         setSharedData(response.data);
-        document.title = `${sharedData.basic_info.name}`;
       })
       .catch((error) => {
         console.log(error);
@@ -50,6 +51,18 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <Home resumeData={resumeData} sharedData={sharedData} />
+        </Route>
+        <Route exact path="/projects">
+          <Projects
+            resumeProjects={resumeData.projects}
+            resumeBasicInfo={resumeData.basic_info}
+          />
+        </Route>
+        <Route exact path="/experience">
+          <Experience
+            resumeExperience={resumeData.experience}
+            resumeBasicInfo={resumeData.basic_info}
+          />
         </Route>
         <Route path="/about">
           <About

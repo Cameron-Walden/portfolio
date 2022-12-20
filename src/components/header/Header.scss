@@ -28,8 +28,8 @@ header {
 	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	// background-color: #e9d5a1;
 	background-color: ghostwhite;
+	// background-color: white;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -53,10 +53,10 @@ header h1 {
 	margin: 0 auto 18px auto;
 	width: 100%;
 	overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .25em; 
-  animation: 
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .25em; 
+	animation: 
     typing 5.5s steps(40),
 }
 
@@ -78,6 +78,14 @@ header h1 {
 }
 
 .nav-home{
+	color:black;
+}
+
+.nav-projects{
+	color:black;
+}
+
+.nav-experience{
 	color:black;
 }
 

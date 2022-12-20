@@ -75,6 +75,20 @@ export default function Header() {
           </LinkContainer>
         </Nav.Item>
         <Nav.Item>
+          <LinkContainer to="/projects">
+            <Nav.Link className="nav-projects" eventKey="projects">
+              Projects
+            </Nav.Link>
+          </LinkContainer>
+        </Nav.Item>
+        <Nav.Item>
+          <LinkContainer to="/experience">
+            <Nav.Link className="nav-experience" eventKey="experience">
+              Experience
+            </Nav.Link>
+          </LinkContainer>
+        </Nav.Item>
+        <Nav.Item>
           <LinkContainer to="/about">
             <Nav.Link className="nav-about" eventKey="about">
               About

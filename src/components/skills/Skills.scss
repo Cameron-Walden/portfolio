@@ -11,7 +11,8 @@
 }
 
 .skills-tile {
-	background-color: transparentize(#F8F5F4, 0.95);
+	color: black;
+	// background-color: transparentize(#F8F5F4, 0.95);
 	padding: 10px 10px 5px 10px;
 	width: 100px;
 	margin: 5px 0 5px 0;
@@ -19,7 +20,8 @@
 }
 
 #skills {
-	background: #1F1F1F;
+	// background: #1F1F1F;
+	background: rgb(238, 237, 237);
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;
@@ -32,6 +34,10 @@
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color: #fff;
+	color: black;
 	text-align: center;
+}
+
+.text-whiten a{
+	color: black;
 }
