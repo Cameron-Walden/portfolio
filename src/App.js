@@ -34,7 +34,6 @@ export default function App() {
     axios(url)
       .then((response) => {
         setSharedData(response.data);
-        document.title = `${sharedData.basic_info.name}`;
       })
       .catch((error) => {
         console.log(error);
