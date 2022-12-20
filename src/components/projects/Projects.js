@@ -49,7 +49,7 @@ export default function Projects({ resumeProjects, resumeBasicInfo }) {
   return (
     <section id="portfolio">
       <div className="col-md-12">
-        <h1 className="section-title" style={{ color: "black" }}>
+        <h1 className="section-title" style={{ color: "white" }}>
           <span>{sectionName}</span>
         </h1>
         <div className="col-md-12 mx-auto">

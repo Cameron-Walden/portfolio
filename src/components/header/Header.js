@@ -16,7 +16,8 @@ export default function Header() {
   const setTheme = () => {
     const dataThemeAttribute = "data-theme";
     const body = document.body;
-    const newTheme = body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
+    const newTheme =
+      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
     body.setAttribute(dataThemeAttribute, newTheme);
   };
 
@@ -71,6 +72,20 @@ export default function Header() {
           <LinkContainer to="/">
             <Nav.Link className="nav-home" href="/">
               Home
+            </Nav.Link>
+          </LinkContainer>
+        </Nav.Item>
+        <Nav.Item>
+          <LinkContainer to="/projects">
+            <Nav.Link className="nav-projects" eventKey="projects">
+              Projects
+            </Nav.Link>
+          </LinkContainer>
+        </Nav.Item>
+        <Nav.Item>
+          <LinkContainer to="/experience">
+            <Nav.Link className="nav-experience" eventKey="experience">
+              Experience
             </Nav.Link>
           </LinkContainer>
         </Nav.Item>
@@ -139,8 +154,7 @@ export default function Header() {
             >
               <h1 className="grow">Cameron Walden</h1>
             </a>
-            <div className="title-container">
-            </div>
+            <div className="title-container"></div>
           </div>
         </div>
       </div>
