@@ -150,6 +150,8 @@ export default function Header() {
             <a
               className="mb-0"
               href="https://www.linkedin.com/in/cameronwalden/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h1 className="grow">Cameron Walden</h1>
             </a>
