@@ -1,17 +1,20 @@
+import { useContext } from "react";
+import { PortfolioContext } from "../../context/PortfolioContext";
 import { Icon } from "@iconify/react";
 import reactIcon from "@iconify/icons-logos/react";
 import javascriptIcon from "@iconify/icons-logos/javascript";
 import materialUi from "@iconify/icons-logos/material-ui";
 import "./About.scss";
 
-export default function About({ sharedBasicInfo, resumeBasicInfo }) {
-  if (sharedBasicInfo) {
-    var profilepic = "images/" + sharedBasicInfo.image;
+export default function About() {
+  const { resumeData, sharedData } = useContext(PortfolioContext)
+  if (sharedData) {
+    var profilepic = "images/" + sharedData.basic_info?.image;
   }
-  if (resumeBasicInfo) {
-    var sectionName = resumeBasicInfo.section_name.about;
-    var hello = resumeBasicInfo.description_header;
-    var about = resumeBasicInfo.description;
+  if (resumeData) {
+    var sectionName = resumeData.basic_info?.section_name.about;
+    var hello = resumeData.basic_info?.description_header;
+    var about = resumeData.basic_info?.description;
   }
 
   return (

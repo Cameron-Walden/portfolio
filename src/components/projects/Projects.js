@@ -1,23 +1,23 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { PortfolioContext } from "../../context/PortfolioContext";
 import ProjectDetailsModal from "../projectDetailsModal/ProjectDetailsModal";
 import "./Projects.scss";
 
-export default function Projects({ resumeProjects, resumeBasicInfo }) {
+export default function Projects() {
   const [projectDescription, setProjectDescription] = useState({});
   const [detailsModalShow, setDetailsModalShow] = useState(false);
+  const { resumeData } = useContext(PortfolioContext)
 
   const showModalDetails = (data) => {
-    setDetailsModalShow({ detailsModalShow });
+    setDetailsModalShow(true);
     setProjectDescription(data);
   };
 
-  const closeModalDetails = () => {
-    setDetailsModalShow(!detailsModalShow);
-  };
+  const closeModalDetails = () => setDetailsModalShow(false);
 
-  if (resumeProjects && resumeBasicInfo) {
-    var sectionName = resumeBasicInfo.section_name.projects;
-    var projects = resumeProjects.map((project) => (
+  if (resumeData) {
+    var sectionName = resumeData.basic_info?.section_name.projects;
+    var projects = resumeData.projects?.map((project) => (
       <div
         className="col-sm-12 col-md-6 col-lg-4"
         key={project.title}
@@ -50,7 +50,7 @@ export default function Projects({ resumeProjects, resumeBasicInfo }) {
     <section id="portfolio">
       <div className="col-md-12">
         <h1 className="section-title" style={{ color: "black" }}>
-          <span>{sectionName}</span>
+          <p>{sectionName}</p>
         </h1>
         <div className="col-md-12 mx-auto">
           <div className="row mx-auto">{projects}</div>

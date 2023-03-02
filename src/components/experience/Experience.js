@@ -1,14 +1,18 @@
+import { useContext } from "react";
+import { PortfolioContext } from "../../context/PortfolioContext";
 import { Badge } from "@mui/material";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import HourglassBottomSharpIcon from "@mui/icons-material/HourglassBottomSharp";
 import "./Experience.scss";
 import "react-vertical-timeline-component/style.min.css";
 
-export default function Experience({ resumeExperience, resumeBasicInfo }) {
-  if (resumeExperience && resumeBasicInfo) {
-    var sectionName = resumeBasicInfo.section_name.experience;
+export default function Experience() {
+  const { resumeData } = useContext(PortfolioContext)
+  
+  if (resumeData) {
+    var sectionName = resumeData.basic_info.section_name.experience;
 
-    var work = resumeExperience.map((work, i) => {
+    var work = resumeData.experience.map((work, i) => {
       const technologies = work.technologies;
       const mainTechnologies = work.mainTech;
 
