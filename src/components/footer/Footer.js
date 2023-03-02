@@ -1,12 +1,15 @@
+import { useContext } from "react";
+import { PortfolioContext } from "../../context/PortfolioContext";
 import "./Footer.scss";
 
-export default function Footer({ sharedBasicInfo }) {
-
+export default function Footer() {
+  const { sharedData } = useContext(PortfolioContext)
+  
   return (
     <footer>
         <div className="row">
           <div className="socials"> 
-            {sharedBasicInfo?.social.map((network) => (
+            {sharedData.basic_info?.social.map((network) => (
               <span key={network.name} className="m-4">
                   <a
                     href={network.url}

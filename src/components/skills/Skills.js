@@ -1,9 +1,13 @@
+import { useContext } from "react";
+import { PortfolioContext } from "../../context/PortfolioContext";
 import "./Skills.scss";
 
-export default function Skills({ sharedSkills, resumeBasicInfo }) {
-  if (sharedSkills && resumeBasicInfo) {
-    var sectionName = resumeBasicInfo.section_name.skills;
-    var skills = sharedSkills.icons.map((skills, i) => (
+export default function Skills() {
+  const { sharedData, resumeData } = useContext(PortfolioContext)
+
+  if (sharedData && resumeData) {
+    var sectionName = resumeData.basic_info?.section_name.skills;
+    var skills = sharedData.skills?.icons.map((skills, i) => (
       <li className="list-inline-item mx-3" key={i}>
         <span>
           <div className="text-center skills-tile">
