@@ -1,23 +1,20 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { PortfolioContext } from "../../context/PortfolioContext";
 import ProjectDetailsModal from "../projectDetailsModal/ProjectDetailsModal";
 import "./Projects.scss";
 
 export default function Projects() {
-  const [projectDescription, setProjectDescription] = useState({});
-  const [detailsModalShow, setDetailsModalShow] = useState(false);
-  const { resumeData } = useContext(PortfolioContext)
+  const { resumeData, setProjectDescription, setDetailsModalShow } =
+    useContext(PortfolioContext);
 
   const showModalDetails = (data) => {
     setDetailsModalShow(true);
     setProjectDescription(data);
   };
 
-  const closeModalDetails = () => setDetailsModalShow(false);
-
   if (resumeData) {
-    var sectionName = resumeData.basic_info?.section_name.projects;
-    var projects = resumeData.projects?.map((project) => (
+    var sectionName = resumeData?.basic_info?.section_name.projects;
+    var projects = resumeData?.projects?.map((project) => (
       <div
         className="col-sm-12 col-md-6 col-lg-4"
         key={project.title}
@@ -55,11 +52,7 @@ export default function Projects() {
         <div className="col-md-12 mx-auto">
           <div className="row mx-auto">{projects}</div>
         </div>
-        <ProjectDetailsModal
-          show={detailsModalShow}
-          onHide={closeModalDetails}
-          data={projectDescription}
-        />
+        <ProjectDetailsModal />
       </div>
     </section>
   );

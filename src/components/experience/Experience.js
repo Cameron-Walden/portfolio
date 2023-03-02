@@ -7,12 +7,12 @@ import "./Experience.scss";
 import "react-vertical-timeline-component/style.min.css";
 
 export default function Experience() {
-  const { resumeData } = useContext(PortfolioContext)
+  const { resumeData } = useContext(PortfolioContext);
   
   if (resumeData) {
-    var sectionName = resumeData.basic_info.section_name.experience;
+    var sectionName = resumeData?.basic_info?.section_name.experience;
 
-    var work = resumeData.experience.map((work, i) => {
+    var work = resumeData?.experience?.map((work, i) => {
       const technologies = work.technologies;
       const mainTechnologies = work.mainTech;
 

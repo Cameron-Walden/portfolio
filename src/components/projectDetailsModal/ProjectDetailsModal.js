@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { PortfolioContext } from "../../context/PortfolioContext";
 import { Modal } from "react-bootstrap";
 import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "../../scss/light-slider.scss";
@@ -5,15 +7,19 @@ import AwesomeSliderStyles2 from "../../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 import "./ProjectDetailsModal.scss";
 
-export default function ProjectDetailsModal(props) {
-  if (props.data) {
-    const technologies = props.data.technologies;
-    const images = props.data.images;
-    var title = props.data.title;
-    var description = props.data.description;
-    var url = props.data.url;
+export default function ProjectDetailsModal() {
+  const { projectDescription, detailsModalShow, setDetailsModalShow } = useContext(PortfolioContext)
 
-    if (props.data.technologies) {
+  const closeModalDetails = () => setDetailsModalShow(false);
+
+  if (projectDescription) {
+    const technologies = projectDescription.technologies;
+    const images = projectDescription.images;
+    var title = projectDescription.title;
+    var description = projectDescription.description;
+    var url = projectDescription.url;
+
+    if (projectDescription.technologies) {
       var tech = technologies.map((icons, i) => (
         <li className="list-inline-item mx-3" key={i}>
           <span>
@@ -28,20 +34,20 @@ export default function ProjectDetailsModal(props) {
         </li>
       ));
 
-      if (props.data.images) {
+      if (projectDescription.images) {
         var img = images.map((image, i) => <div key={i} data-src={image} />);
       }
     }
   }
   return (
     <Modal
-      {...props}
+      show={detailsModalShow}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
       className="modal-inside"
     >
-      <span onClick={props.onHide} className="modal-close">
+      <span onClick={closeModalDetails} className="modal-close">
         <i className="fas fa-times fa-3x close-icon"></i>
       </span>
       <div className="col-md-12">
